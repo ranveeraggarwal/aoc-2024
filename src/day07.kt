@@ -1,7 +1,9 @@
+import kotlin.time.measureTimedValue
+
 fun main() {
     val input = readInput("day07")
-    println(part71(input))
-    println(part72(input))
+    println(measureTimedValue { part71(input) })
+    println(measureTimedValue { part72(input) })
 }
 
 
